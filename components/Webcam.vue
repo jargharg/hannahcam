@@ -1,7 +1,7 @@
 <template>
   <button
     class="block bg-black w-screen h-screen transition-transform duration-500 transform"
-    :class="{ '-scale-x-100': isFlipped }"
+    :class="{ '-scale-x-100': !isFlipped }"
     @click="isFlipped = !isFlipped"
   >
     <video autoplay="true" ref="elStream" class="w-full h-full"></video>
